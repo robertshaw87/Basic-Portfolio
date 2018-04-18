@@ -30,9 +30,16 @@
             <section class="article-title">
                 Contact
             </section>
-            <section class="article-text">
-                Entry Form GOES HERE
-            </section>
+            <form class="article-text" action="/action_page.php" method="get">
+                Name <br>
+                <input class="input-single" type="text" name="contactname"> <br>
+                Email <br>
+                <input class="input-single" type="text" name="contactemail"> <br>
+                Message <br>
+                <textarea class="input-box" type="text" name="contactmessage"> </textarea><br>
+            </form>
+            <br>
+            <button class="contact-submit" type="button">Submit</button>
         </article>
     </section>
 

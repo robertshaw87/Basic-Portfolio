@@ -14,9 +14,9 @@ header {
     position: fixed;
     margin: 0;
     height: 120px;
-    width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
+    width: 960px;
+    padding-left: calc((100% - 960px)/2);
+    padding-right: calc((100% - 960px)/2);
     background-color: #fff;
     border-bottom-style: solid;
     border-width: 5px;
@@ -89,7 +89,10 @@ header {
 
 /* main text box */
 article {
-    margin: 35px 15% 35px 15%;
+    margin-top: 35px;
+    margin-left: calc((100% - 960px)/2);
+    margin-bottom: 35px;
+    margin-right: calc((100% - 960px)/2);
     background-color: white;
     border-color: #999;
     border-style: solid;

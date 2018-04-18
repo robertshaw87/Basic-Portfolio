@@ -1,3 +1,4 @@
+/* add background to webpage */
 body {
     /*margin and padding here to remove gap around edges*/
     margin: 0px;
@@ -8,7 +9,7 @@ body {
 }
 
 /*sticky header wrapper*/
-header {
+/* header {
     left: 0;
     top: 0;
     position: fixed;
@@ -21,7 +22,31 @@ header {
     border-bottom-style: solid;
     border-width: 5px;
     border-color: #999;
+} */
 
+/* background formatting for header */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #999;
+    text-align: center;
+}
+
+/* wrapper for actual content of header */
+.header-content {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #name-tag {
@@ -35,6 +60,7 @@ header {
     font-weight: bold;
     padding: 20px;
     margin-top: 40px;
+    margin-bottom: -5px;
 }
 
 /* default formatting for links in the header */

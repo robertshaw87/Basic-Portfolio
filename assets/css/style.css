@@ -4,6 +4,49 @@ body {
     background-repeat: repeat;
 }
 
-header {
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+a:active {color: #58c;}
 
+header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-bottom-style: outset;
+    border-width: 5px;
+    border-color: #fff;
+    position: absolute;
+}
+
+#name-tag {
+    background-color: #58c;
+    color: white;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px 10%;
+}
+
+.header-links-table {
+    margin: 70px 10%;
+    float: right;
+    color: #444;
+    width: 20%;
+}
+
+.header-links-table td {
+    width: 33.33%;
+
+}
+
+article {
+    clear:both;
 }

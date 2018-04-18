@@ -91,6 +91,12 @@ article {
     padding: 25px 35px 25px 35px;
 }
 
+article::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /* main text title styling*/
 .article-title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -103,6 +109,19 @@ article {
     border-color: #ddd;
     margin-bottom: 35px;
 }
+
+.article-text {
+    font-size: 20px;
+}
+
+#portrait {
+    float:left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+
+
 
 /* Sticky Footer */
 footer {

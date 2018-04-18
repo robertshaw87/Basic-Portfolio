@@ -24,15 +24,22 @@
         </section>
     </header>
 
-    <!-- Introduction body -->
+    <!-- Contact form body -->
     <section class="content-wrapper">
         <article>
             <section class="article-title">
-                Portfolio
+                Contact
             </section>
-            <section class="article-text">
-                Portfolio goes here. text over images?
-            </section>
+            <form class="article-text" action="/action_page.php" method="get">
+                Name <br>
+                <input class="input-single" type="text" name="contactname"> <br>
+                Email <br>
+                <input class="input-single" type="text" name="contactemail"> <br>
+                Message <br>
+                <textarea class="input-box" type="text" name="contactmessage"> </textarea><br>
+            </form>
+            <br>
+            <button class="contact-submit" type="button">Submit</button>
         </article>
     </section>
 

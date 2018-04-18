@@ -7,17 +7,7 @@ body {
     background-repeat: repeat;
 }
 
-/*removes underlining and color change on links*/
-a:link {
-    text-decoration: none;
-    color: #666;
-}
 
-/*removes underlining and color change on visited links*/
-a:visited {
-    text-decoration: none;
-    color:#666;
-}
 a:active {color: #58c;}
 
 /*sticky header wrapper*/
@@ -50,6 +40,7 @@ header {
     margin-top: 40px;
 }
 
+/* default formatting for links in the header */
 .header-links {
     margin-top: 85px;
     float: right;
@@ -61,14 +52,32 @@ header {
     font-weight: bold;
 }
 
+/*removes underlining and color change on links in header*/
+.header-links a:link {
+    text-decoration: none;
+    color: #666;
+}
+
+/*removes underlining and color change on visited links in header*/
+.header-links a:visited {
+    text-decoration: none;
+    color:#666;
+}
+
+/* change color of element while cursor is over it*/
+.header-links:hover{
+    background-color: #ccc;
+    color: white;
+}
+
+/* move the contact link 20 pixels to the right to compensate for padding*/
 #header-contact {
-    padding-right: 0px;
+    margin-right: -20px;
     border-left-style: solid;
     border-left-color: #ddd;
 }
 
 #header-about {
-    padding-left: 0px;
     border-right-style: solid;
     border-right-color: #ddd;
 }
@@ -91,6 +100,7 @@ article {
     padding: 25px 35px 25px 35px;
 }
 
+/* clearfix hack */
 article::after {
     content: "";
     clear: both;
@@ -110,10 +120,12 @@ article::after {
     margin-bottom: 35px;
 }
 
+/* default text for body */
 .article-text {
     font-size: 20px;
 }
 
+/* headshot formatting in index */
 #portrait {
     float:left;
     margin-right: 25px;
@@ -130,7 +142,7 @@ footer {
     bottom: 0;
     position: fixed;
     width: 100%;
-    background-color: #777;
+    background-color: #888;
     border-top-style: solid;
     border-width: 10px;
     border-color: #68b;

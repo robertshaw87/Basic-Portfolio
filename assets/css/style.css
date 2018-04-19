@@ -121,7 +121,7 @@ header {
 
 /* changes color of links when hovered over */
 .header-links a:hover {
-    background-color: #68b;
+    background-color: #69d;
     color: white;
 }
 
@@ -211,6 +211,12 @@ article::after {
 
 }
 
+/* styles the placeholder text in the message box */
+::-webkit-input-placeholder {
+    color: #666;
+    opacity: .5;
+}
+
 /* styling for submit button on contact page*/
 .contact-submit {
     background-color: #58c;
@@ -220,6 +226,10 @@ article::after {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
+}
+
+.contact-submit:hover {
+    background-color: #69d;
 }
 
 /* potential color change on hover for submit button on contact page */
@@ -260,7 +270,13 @@ article::after {
     text-align: center;
 }
 
+/* add effect to portfolio image on hover */
+.portfolio-element:hover {
+    opacity: .9;
+}
+
 /* add effect while hovering over the portfolio image to caption */
 .portfolio-element:hover .portfolio-caption, .portfolio-element.hover .portfolio-caption {
     opacity: 1;
+    background-color: #69d;
 }

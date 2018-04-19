@@ -43,7 +43,11 @@
                 <h2>Email</h2>
                 <input class="input-single" type="text" name="contactemail"> <br>
                 <h2>Message</h2>
-                <textarea class="input-box" name="contactmessage"></textarea><br>
+                <textarea class="input-box" name="contactmessage" 
+                    placeholder="I look forward to hearing from you!"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='I look forward to hearing from you!'"
+                    ></textarea><br>
             </form>
             <br>
             <button class="contact-submit" type="button">Submit</button>

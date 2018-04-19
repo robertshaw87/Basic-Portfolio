@@ -43,6 +43,7 @@ header {
     top: 0;
     height: 100px;
     width: 100%;
+    z-index: 10;
     background-color: #fff;
     border-bottom-style: solid;
     border-width: 5px;
@@ -124,6 +125,24 @@ header {
     color: white;
 }
 
+/* Sticky Footer */
+footer {
+    clear:both;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    background-color: #888;
+    border-top-style: solid;
+    border-width: 10px;
+    border-color: #68b;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: #eee;
+    text-align: center;
+}
+
 /* padding to the main body of the article in order to keep 
     content out of header and footer*/
 .content-wrapper{
@@ -153,8 +172,6 @@ article::after {
     clear: both;
     display: table;
 }
-
-
 
 /* body page title styling*/
 .article-title {
@@ -210,21 +227,35 @@ article::after {
     background-color:#666;
 } */
 
+/* wrapper for portfolio projects list */
+.portfolio-content {
+    position: relative;
+    height: 500px;
+    margin: 0;
+    /* background-color: red; */
+}
 
+/* link formatting for individual projects,
+    links as button/box like objects */
+.portfolio-element {
+    position: relative;
+    float: left;
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 10px 40px 30px 0;
+    background-color: grey;
+}
 
-/* Sticky Footer */
-footer {
-    clear:both;
+/* caption for each link-image combo */
+.portfolio-caption {
+    background-color: #58c;
+    color: white;
+    position: absolute;
+    bottom: 40px;
     left: 0;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    background-color: #888;
-    border-top-style: solid;
-    border-width: 10px;
-    border-color: #68b;
-    padding-top: 25px;
-    padding-bottom: 10px;
-    color: #eee;
+    right: 0;
+    padding: 10px;
+    opacity: .9;
     text-align: center;
 }

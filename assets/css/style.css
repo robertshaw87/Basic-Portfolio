@@ -56,7 +56,7 @@ header {
     position: absolute;
     bottom: 0;
     width: 60%;
-    min-width: 650px;
+    min-width: 660px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -149,7 +149,7 @@ footer {
     padding-top: 130px;
     padding-bottom: 110px;
     width: 60%;
-    min-width: 650px;
+    min-width: 660px;
     margin-left: auto;
     margin-right: auto;
     clear:both;

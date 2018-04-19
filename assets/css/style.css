@@ -259,3 +259,8 @@ article::after {
     opacity: .9;
     text-align: center;
 }
+
+/* add effect while hovering over the portfolio image to caption */
+.portfolio-element:hover .portfolio-caption, .portfolio-element.hover .portfolio-caption {
+    opacity: 1;
+}

@@ -4,23 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <title>Robert Shaw</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
 </head>
 
 <body>
-    <!-- Static Header. Links are right floated so in reverse order -->
+    <!-- Static Header wrapper -->
     <header>
-        <section id="name-tag">
-            Robert Shaw
-        </section>
-        <section class="header-links" id="header-contact">
-                <a href="contact.html">Contact</a>
-        </section>
-        <section class="header-links" id="header-portfolio">
-            <a href="portfolio.html">Portfolio</a>
-        </section>
-        <section class="header-links" id="header-about">
-                <a href="index.html">About</a>
+        <!-- actual content of the header -->
+        <section class="header-content">
+            <section id="name-tag">
+                Robert Shaw
+            </section>
+
+            <section class="header-nav">
+                <section class="header-links" id="header-about">
+                    <a href="index.html">About</a>
+                </section>
+                <section class="header-links" id="header-portfolio">
+                    <a href="portfolio.html">Portfolio</a>
+                </section>
+                <section class="header-links" id="header-contact">
+                    <a href="contact.html">Contact</a>
+                </section>
+            </section>
         </section>
     </header>
 
@@ -31,12 +38,12 @@
                 <h1>Contact</h1>
             </section>
             <form class="article-text" action="/action_page.php" method="get">
-                Name <br>
+                <h2>Name</h2>
                 <input class="input-single" type="text" name="contactname"> <br>
-                Email <br>
+                <h2>Email</h2>
                 <input class="input-single" type="text" name="contactemail"> <br>
-                Message <br>
-                <textarea class="input-box" type="text" name="contactmessage"> </textarea><br>
+                <h2>Message</h2>
+                <textarea class="input-box" type="text" name="contactmessage"></textarea><br>
             </form>
             <br>
             <button class="contact-submit" type="button">Submit</button>
@@ -45,7 +52,7 @@
 
     <!-- Static Footer -->
     <footer>
-        Copyright &copy
+        Copyright &copy;
     </footer>
 </body>
 

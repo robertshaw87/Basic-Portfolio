@@ -1,30 +1,37 @@
 /* add background to webpage */
 body {
     /*margin and padding here to remove gap around edges*/
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color:#ddd;
     background-image: url("../images/background.png");
     background-repeat: repeat;
 }
 
-/*sticky header wrapper*/
-/* header {
-    left: 0;
-    top: 0;
-    position: fixed;
-    margin: 0;
-    height: 120px;
-    width: 960px;
-    padding-left: calc((100% - 960px)/2);
-    padding-right: calc((100% - 960px)/2);
-    background-color: #fff;
-    border-bottom-style: solid;
-    border-width: 5px;
-    border-color: #999;
-} */
+/* styles and enlarges h1 tag */
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
 
-/* background formatting for header */
+/* bolds and changes font for h3 */
+h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+/* add formatting for <p> tags
+    more spacing after each <p> element and between lines within <p>*/
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+/* background formatting for sticky header */
 header {
     position: fixed;
     left: 0;
@@ -49,6 +56,8 @@ header {
     margin-right: auto;
 }
 
+/* name tag in the header, moved to cover the border of the 
+    header wrapper and leave a gap at the top of the header */
 #name-tag {
     width: 300px;
     background-color: #68b;
@@ -63,47 +72,69 @@ header {
     margin-bottom: -5px;
 }
 
-/* default formatting for links in the header */
-.header-links {
+/* wrapper for nav links in the header */
+.header-nav {
     margin-top: 85px;
-    float: right;
-    color: #666;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: right;
+    /* margin-right: -20px; */
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    text-align: center;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-weight: bold;
 }
 
-/*removes underlining and color change on links in header*/
-.header-links a:link {
+/* formatting for individual nav links */
+.header-links {
+    float: left;
+    margin-bottom: 5px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: #ddd;
+}
+
+/* remove border on left side link */
+#header-about {
+    border-left-style: none;
+}
+
+/* remove border on right side link */
+#header-contact {
+    border-right-style: none;
+}
+
+/*remove underlining and color change on links in header
+    makes the links into "buttons" by adding padding*/
+.header-links a:link, .header-links a:visited, .header-links a {
+    padding: 5px 20px;
     text-decoration: none;
     color: #666;
 }
 
-/*removes underlining and color change on visited links in header*/
-.header-links a:visited {
-    text-decoration: none;
-    color:#666;
-}
-
-/* change color of element while cursor is over it*/
-.header-links:hover{
-    background-color: #ccc;
+/* changes color of links when hovered over */
+.header-links a:hover {
+    background-color: #68b;
     color: white;
 }
 
+/* change color of element while cursor is over it*/
+/* .header-links:hover{
+    background-color: #ccc;
+    color: white;
+} */
+
 /* move the contact link 20 pixels to the right to compensate for padding*/
-#header-contact {
+/* #header-contact {
     margin-right: -20px;
     border-left-style: solid;
     border-left-color: #ddd;
-}
+} */
 
-#header-about {
+/* #header-about {
     border-right-style: solid;
     border-right-color: #ddd;
-}
+} */
 
 /* padding to the main body of the article in order to keep 
     content out of header and footer*/
@@ -119,15 +150,12 @@ header {
 /* main text box */
 article {
     margin-top: 35px;
-    /* margin-left: calc((100% - 960px)/2); */
     margin-bottom: 35px;
-    /* margin-right: calc((100% - 960px)/2); */
     background-color: white;
     border-color: #999;
     border-style: solid;
     border-width: 2px;
     padding: 35px;
-    /* padding: 25px 35px 25px 35px; */
 }
 
 /* clearfix hack */
@@ -137,30 +165,25 @@ article::after {
     display: table;
 }
 
-/* main text title styling*/
+
+
+/* body page title styling*/
 .article-title {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 35px;
-    font-weight: bold;
     color: #68b;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
     border-bottom-style: solid;
     border-width: 3px;
     border-color: #ddd;
     margin-bottom: 35px;
 }
 
-/* default text for body */
-.article-text {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 20px;
-}
 
 /* headshot formatting in index */
 #portrait-me {
     float:left;
+    margin-top: 5px;
     margin-right: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* single line input box formatting in contact */

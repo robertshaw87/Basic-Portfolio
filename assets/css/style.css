@@ -41,7 +41,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100px;
+    height: 75px;
     width: 100%;
     z-index: 10;
     background-color: #fff;
@@ -55,7 +55,7 @@ header {
 .header-content {
     position: absolute;
     bottom: 0;
-    width: 60%;
+    width: 960px;
     min-width: 660px;
     left: 0;
     right: 0;
@@ -72,10 +72,9 @@ header {
     float: left;
     text-align: center;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 39px;
+    font-size: 40px;
     font-weight: bold;
     padding: 20px;
-    margin-top: 40px;
     margin-bottom: -5px;
 }
 
@@ -148,7 +147,7 @@ footer {
 .content-wrapper{
     padding-top: 130px;
     padding-bottom: 110px;
-    width: 60%;
+    width: 960px;
     min-width: 660px;
     margin-left: auto;
     margin-right: auto;
